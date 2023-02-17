@@ -2232,12 +2232,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/ecma402-abstract@npm:1.6.1":
-  version: 1.6.1
-  resolution: "@formatjs/ecma402-abstract@npm:1.6.1"
+"@formatjs/fast-memoize@npm:1.2.1":
+  version: 1.2.1
+  resolution: "@formatjs/fast-memoize@npm:1.2.1"
   dependencies:
     tslib: ^2.1.0
-  checksum: ca1add786d244bcb6b34dfd80f46f51f1bc26b47d479ff61369631c38865277425149c26c224091358b3a7be9fdc004d23fa5a4a0897535dfdedf070e16598cc
+  checksum: 7df9e941142be16e5862afe7387926cec44ec136d2c2f9a7e1598cb6c8c23a65e420ed90251ec9b48df083f5473b10d6fbbee2e9fc7233d5bf1f27efffba59a7
   languageName: node
   linkType: hard
 
@@ -2283,33 +2283,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/intl-datetimeformat@npm:3.2.11":
-  version: 3.2.11
-  resolution: "@formatjs/intl-datetimeformat@npm:3.2.11"
+"@formatjs/intl-displaynames@npm:5.4.3":
+  version: 5.4.3
+  resolution: "@formatjs/intl-displaynames@npm:5.4.3"
   dependencies:
-    "@formatjs/ecma402-abstract": 1.6.1
+    "@formatjs/ecma402-abstract": 1.11.4
+    "@formatjs/intl-localematcher": 0.2.25
     tslib: ^2.1.0
-  checksum: c0c93ed3ecb7e6e195d2147f4fca7240fbbaa33dadfcaa17b0e95734b82bad518a340bd373f43f0d0bdaf89ad359f0f4497104c626598c6ab698ccc0757f2884
+  checksum: 5d9444ce6b0f906fb95e657e276f341c6eb96d76411182f35a05388fa8da8d5af0ede3641c8316f9d08aeedae6fcc152ccc34f3bff67b1f20295472bbaa6626b
   languageName: node
   linkType: hard
 
-"@formatjs/intl-displaynames@npm:4.0.9":
-  version: 4.0.9
-  resolution: "@formatjs/intl-displaynames@npm:4.0.9"
+"@formatjs/intl-listformat@npm:6.5.3":
+  version: 6.5.3
+  resolution: "@formatjs/intl-listformat@npm:6.5.3"
   dependencies:
-    "@formatjs/ecma402-abstract": 1.6.1
+    "@formatjs/ecma402-abstract": 1.11.4
+    "@formatjs/intl-localematcher": 0.2.25
     tslib: ^2.1.0
-  checksum: f6e1c79b5fa0f0ceb1ea2b4259ce47d2a1c5e27cd3ab3280a20be99ef2eeaa3a5bb27eda3dc5647a3c03380b2c813bd47ac2be95e4a40cc937311476ec897771
-  languageName: node
-  linkType: hard
-
-"@formatjs/intl-listformat@npm:5.0.9":
-  version: 5.0.9
-  resolution: "@formatjs/intl-listformat@npm:5.0.9"
-  dependencies:
-    "@formatjs/ecma402-abstract": 1.6.1
-    tslib: ^2.1.0
-  checksum: f75c06859c4222766c2812723cddafe168b403ea18360d80719ed70bf9ae54a7c451b9d730921b4335eba3e88a1ef4c65efbb8436dc0ce3d3ccd12235e702a62
+  checksum: e641b7f82eb2a9ea8fdfc66783356e4c438c6fdd23fb64e05d2712d0bf06c18fc54ac80f46fadd158c4f3920d2d970bc3ecb4718d30df7abaf5b1de8f6b55f17
   languageName: node
   linkType: hard
 
@@ -2331,30 +2323,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@formatjs/intl-relativetimeformat@npm:8.1.1":
-  version: 8.1.1
-  resolution: "@formatjs/intl-relativetimeformat@npm:8.1.1"
+"@formatjs/intl@npm:2.2.1":
+  version: 2.2.1
+  resolution: "@formatjs/intl@npm:2.2.1"
   dependencies:
-    "@formatjs/ecma402-abstract": 1.6.1
+    "@formatjs/ecma402-abstract": 1.11.4
+    "@formatjs/fast-memoize": 1.2.1
+    "@formatjs/icu-messageformat-parser": 2.1.0
+    "@formatjs/intl-displaynames": 5.4.3
+    "@formatjs/intl-listformat": 6.5.3
+    intl-messageformat: 9.13.0
     tslib: ^2.1.0
-  checksum: c3e36b2af9f3aa728d1eebcc0a9a0a7177862d395f42da371f4a78295963dfb8f851115b7e970e73cd650bfb28eb77ed0bbfb97094a60c238effdd11cc5743f3
-  languageName: node
-  linkType: hard
-
-"@formatjs/intl@npm:1.8.1":
-  version: 1.8.1
-  resolution: "@formatjs/intl@npm:1.8.1"
-  dependencies:
-    "@formatjs/ecma402-abstract": 1.6.1
-    "@formatjs/intl-datetimeformat": 3.2.11
-    "@formatjs/intl-displaynames": 4.0.9
-    "@formatjs/intl-listformat": 5.0.9
-    "@formatjs/intl-relativetimeformat": 8.1.1
-    fast-memoize: ^2.5.2
-    intl-messageformat: 9.5.1
-    intl-messageformat-parser: 6.4.1
-    tslib: ^2.1.0
-  checksum: 9a7a76a397573154dd937df5629dd4a4a9da40126c05106b77895bd7487d3259b5ccfbb4e506f5a3789b8267b81121fa8e2653e337edc34c05cab5904deb4193
+  peerDependencies:
+    typescript: ^4.5
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 35411545e2975b641faede0d58d1afe0f44b90cac6fa37b0d025366c91378dafde6a7ac35a1cc02d0e11c90cb2e57e3b2f6d50044b8f00092bc6d0ef197d4d49
   languageName: node
   linkType: hard
 
@@ -3044,7 +3029,7 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     react-iframe: 1.8.0
-    react-intl: 5.13.1
+    react-intl: 5.25.1
     react-mde: ^11.0.0
     react-pdf: ^4.1.0
     react-plotly.js: 2.2.0
@@ -5961,6 +5946,17 @@ __metadata:
     "@types/scheduler": "*"
     csstype: ^3.0.2
   checksum: b5629dff7c2f3e9fcba95a19b2b3bfd78d7cacc33ba5fc26413dba653d34afcac3b93ddabe563e8062382688a1eac7db68e93739bb8e712d27637a03aaafbbb8
+  languageName: node
+  linkType: hard
+
+"@types/react@npm:16 || 17 || 18":
+  version: 18.0.28
+  resolution: "@types/react@npm:18.0.28"
+  dependencies:
+    "@types/prop-types": "*"
+    "@types/scheduler": "*"
+    csstype: ^3.0.2
+  checksum: e752df961105e5127652460504785897ca6e77259e0da8f233f694f9e8f451cde7fa0709d4456ade0ff600c8ce909cfe29f9b08b9c247fa9b734e126ec53edd7
   languageName: node
   linkType: hard
 
@@ -13064,13 +13060,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"fast-memoize@npm:^2.5.2":
-  version: 2.5.2
-  resolution: "fast-memoize@npm:2.5.2"
-  checksum: 79fa759719ba4eac7e8c22fb3b0eb3f18f4a31e218c00b1eb4a5b53c5781921133a6b84472d59ec5a6ea8f26ad57b43cd99a350c0547ccce51489bc9a5f0b28d
-  languageName: node
-  linkType: hard
-
 "fastq@npm:^1.6.0":
   version: 1.8.0
   resolution: "fastq@npm:1.8.0"
@@ -13673,7 +13662,7 @@ fsevents@^1.2.7:
 
 "fsevents@patch:fsevents@^1.2.7#~builtin<compat/fsevents>":
   version: 1.2.9
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.9#~builtin<compat/fsevents>::version=1.2.9&hash=d11327"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.9#~builtin<compat/fsevents>::version=1.2.9&hash=18f3a7"
   dependencies:
     nan: ^2.12.1
     node-pre-gyp: ^0.12.0
@@ -13683,7 +13672,7 @@ fsevents@^1.2.7:
 
 "fsevents@patch:fsevents@^2.1.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -13692,7 +13681,7 @@ fsevents@^1.2.7:
 
 "fsevents@patch:fsevents@~2.1.2#~builtin<compat/fsevents>":
   version: 2.1.3
-  resolution: "fsevents@patch:fsevents@npm%3A2.1.3#~builtin<compat/fsevents>::version=2.1.3&hash=31d12a"
+  resolution: "fsevents@patch:fsevents@npm%3A2.1.3#~builtin<compat/fsevents>::version=2.1.3&hash=18f3a7"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -15746,24 +15735,15 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"intl-messageformat-parser@npm:6.4.1":
-  version: 6.4.1
-  resolution: "intl-messageformat-parser@npm:6.4.1"
+"intl-messageformat@npm:9.13.0":
+  version: 9.13.0
+  resolution: "intl-messageformat@npm:9.13.0"
   dependencies:
-    "@formatjs/ecma402-abstract": 1.6.1
+    "@formatjs/ecma402-abstract": 1.11.4
+    "@formatjs/fast-memoize": 1.2.1
+    "@formatjs/icu-messageformat-parser": 2.1.0
     tslib: ^2.1.0
-  checksum: 5061f408626d1b5b1815c569d897b4b9b0926bf08f4935069dbe50648f0ce2542c1df3f404f29e3e4cd3047297a2696b0869c80a15945753f745007f4e2de8f5
-  languageName: node
-  linkType: hard
-
-"intl-messageformat@npm:9.5.1":
-  version: 9.5.1
-  resolution: "intl-messageformat@npm:9.5.1"
-  dependencies:
-    fast-memoize: ^2.5.2
-    intl-messageformat-parser: 6.4.1
-    tslib: ^2.1.0
-  checksum: d83ee2fe0393cd9df75bba0c348a5143b56b331565639bcce6f1fbc0418b32d7d3ca40aba6b12597888c74f1eade2b0a31c6d265c3f9d9f20127fc712631f1a6
+  checksum: effb840ae6e213adceab9951dbb2d18d1a354c82e35dbd213011daf23bcc79e2a18b6ef79157ae3b69c1e6d898fe66b54dd184ac180ee0646e26a70276e60038
   languageName: node
   linkType: hard
 
@@ -23187,29 +23167,27 @@ plotly.js@2.5.1:
   languageName: node
   linkType: hard
 
-"react-intl@npm:5.13.1":
-  version: 5.13.1
-  resolution: "react-intl@npm:5.13.1"
+"react-intl@npm:5.25.1":
+  version: 5.25.1
+  resolution: "react-intl@npm:5.25.1"
   dependencies:
-    "@formatjs/ecma402-abstract": 1.6.1
-    "@formatjs/intl": 1.8.1
-    "@formatjs/intl-displaynames": 4.0.9
-    "@formatjs/intl-listformat": 5.0.9
-    "@formatjs/intl-relativetimeformat": 8.1.1
+    "@formatjs/ecma402-abstract": 1.11.4
+    "@formatjs/icu-messageformat-parser": 2.1.0
+    "@formatjs/intl": 2.2.1
+    "@formatjs/intl-displaynames": 5.4.3
+    "@formatjs/intl-listformat": 6.5.3
     "@types/hoist-non-react-statics": ^3.3.1
-    fast-memoize: ^2.5.2
+    "@types/react": 16 || 17 || 18
     hoist-non-react-statics: ^3.3.2
-    intl-messageformat: 9.5.1
-    intl-messageformat-parser: 6.4.1
-    shallow-equal: ^1.2.1
+    intl-messageformat: 9.13.0
     tslib: ^2.1.0
   peerDependencies:
-    react: ^16.3.0 || 17
-    typescript: ^4.2
+    react: ^16.3.0 || 17 || 18
+    typescript: ^4.5
   peerDependenciesMeta:
     typescript:
       optional: true
-  checksum: 465356f18e7cfa7f31b4ea1416bbab4902413e4d760e89e935a843f06a8251da4067bb269780e92a39460806e8333ddf7d92aa696c2c29c3ff16bfe348045636
+  checksum: 93876910a68ee13937c405d0a25b5b1ae9c262290fc8aeedc8457b2d63a3b2dff6a86a9d01f1c3e0b1e49e23df37225d84e404ef7ab406ee2e6717fc23f54653
   languageName: node
   linkType: hard
 
@@ -24351,14 +24329,14 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^0.6.1#~builtin<compat/resolve>":
   version: 0.6.3
-  resolution: "resolve@patch:resolve@npm%3A0.6.3#~builtin<compat/resolve>::version=0.6.3&hash=3bafbf"
+  resolution: "resolve@patch:resolve@npm%3A0.6.3#~builtin<compat/resolve>::version=0.6.3&hash=07638b"
   checksum: fbdc248b89f655da8ff1509c000027702455d36e99943307d6e939bbef8b6f2bf67f82aa82ceb968f121febea128dd9b3e544fc6497c105204b1633bee1efad9
   languageName: node
   linkType: hard
 
 "resolve@patch:resolve@^1.0.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.10#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.5#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.3#~builtin<compat/resolve>":
   version: 1.22.0
-  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"
   dependencies:
     is-core-module: ^2.8.1
     path-parse: ^1.0.7
@@ -24371,7 +24349,7 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.2.0#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"
   dependencies:
     is-core-module: ^2.9.0
     path-parse: ^1.0.7
@@ -24384,7 +24362,7 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^2.0.0-next.3#~builtin<compat/resolve>":
   version: 2.0.0-next.3
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=07638b"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
@@ -25141,13 +25119,6 @@ resolve@^2.0.0-next.3:
   version: 0.0.1
   resolution: "shallow-copy@npm:0.0.1"
   checksum: 2d249a5a57a160b439d84fbf9ed7c0a107a3d656d1bda0b73edf9476c6e6ea9d2afa79829bf33fce6677fae35b15c14e5c28f9902dc4d07a302637a225d00634
-  languageName: node
-  linkType: hard
-
-"shallow-equal@npm:^1.2.1":
-  version: 1.2.1
-  resolution: "shallow-equal@npm:1.2.1"
-  checksum: 4f1645cc516e7754c4438db687e1da439a5f29a7dba2ba90c5f88e5708aeb17bc4355ba45cad805b0e95dc898e37d8bf6d77d854919c7512f89939986cff8cd1
   languageName: node
   linkType: hard
 
@@ -27263,11 +27234,11 @@ resolve@^2.0.0-next.3:
 
 "typescript@patch:typescript@^4.5#~builtin<compat/typescript>, typescript@patch:typescript@^4.9.3#~builtin<compat/typescript>":
   version: 4.9.3
-  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"
+  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 67ca21a387c0572f1c04936e638dde7782c5aa520c3754aadc7cc9b7c915da9ebc3e27c601bfff4ccb7d7264e82dce6d277ada82ec09dc75024349e0ef64926d
+  checksum: ef65c22622d864497d0a0c5db693523329b3284c15fe632e93ad9aa059e8dc38ef3bd767d6f26b1e5ecf9446f49bd0f6c4e5714a2eeaf352805dc002479843d1
   languageName: node
   linkType: hard
 
