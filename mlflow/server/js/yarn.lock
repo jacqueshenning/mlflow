@@ -3006,7 +3006,7 @@ __metadata:
     eslint-config-react-app: ^6.0.0
     eslint-config-standard: 10.2.1
     eslint-import-resolver-webpack: 0.8.4
-    eslint-loader: 2.1.1
+    eslint-loader: 3.0.0
     eslint-plugin-chai-expect: 1.1.1
     eslint-plugin-chai-friendly: ^0.7.2
     eslint-plugin-cypress: ^2.12.1
@@ -12178,19 +12178,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-loader@npm:2.1.1":
-  version: 2.1.1
-  resolution: "eslint-loader@npm:2.1.1"
+"eslint-loader@npm:3.0.0":
+  version: 3.0.0
+  resolution: "eslint-loader@npm:3.0.0"
   dependencies:
-    loader-fs-cache: ^1.0.0
-    loader-utils: ^1.0.2
-    object-assign: ^4.0.1
-    object-hash: ^1.1.4
-    rimraf: ^2.6.1
+    loader-fs-cache: ^1.0.2
+    loader-utils: ^1.2.3
+    object-hash: ^1.3.1
+    schema-utils: ^2.1.0
   peerDependencies:
-    eslint: ">=1.6.0 <6.0.0"
-    webpack: ">=2.0.0 <5.0.0"
-  checksum: 43e0180c39bfc1a1e2da864edfb15a33f31f7cc915519a19ad65d85ff529746d89be7c195a61809e2503903f6358dca707bf33e84c6c50c784128a4658c7564e
+    eslint: ^5.0.0 || ^6.0.0
+    webpack: ^4.0.0
+  checksum: e43085edd4802c8c911682ef7310b65825d87b6750905e4cd50247e785b9dac50afaaab4c182c2feea60742c2d6b6239b2346ca35105d3c1f109da1c02a0d6c8
   languageName: node
   linkType: hard
 
@@ -13673,7 +13672,7 @@ fsevents@^1.2.7:
 
 "fsevents@patch:fsevents@^1.2.7#~builtin<compat/fsevents>":
   version: 1.2.9
-  resolution: "fsevents@patch:fsevents@npm%3A1.2.9#~builtin<compat/fsevents>::version=1.2.9&hash=d11327"
+  resolution: "fsevents@patch:fsevents@npm%3A1.2.9#~builtin<compat/fsevents>::version=1.2.9&hash=18f3a7"
   dependencies:
     nan: ^2.12.1
     node-pre-gyp: ^0.12.0
@@ -13683,7 +13682,7 @@ fsevents@^1.2.7:
 
 "fsevents@patch:fsevents@^2.1.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@^2.3.2#~builtin<compat/fsevents>, fsevents@patch:fsevents@~2.3.2#~builtin<compat/fsevents>":
   version: 2.3.2
-  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=df0bf1"
+  resolution: "fsevents@patch:fsevents@npm%3A2.3.2#~builtin<compat/fsevents>::version=2.3.2&hash=18f3a7"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -13692,7 +13691,7 @@ fsevents@^1.2.7:
 
 "fsevents@patch:fsevents@~2.1.2#~builtin<compat/fsevents>":
   version: 2.1.3
-  resolution: "fsevents@patch:fsevents@npm%3A2.1.3#~builtin<compat/fsevents>::version=2.1.3&hash=31d12a"
+  resolution: "fsevents@patch:fsevents@npm%3A2.1.3#~builtin<compat/fsevents>::version=2.1.3&hash=18f3a7"
   dependencies:
     node-gyp: latest
   conditions: os=darwin
@@ -17799,7 +17798,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"loader-fs-cache@npm:^1.0.0":
+"loader-fs-cache@npm:^1.0.2":
   version: 1.0.3
   resolution: "loader-fs-cache@npm:1.0.3"
   dependencies:
@@ -17834,7 +17833,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"loader-utils@npm:^1.0.2, loader-utils@npm:^1.2.3":
+"loader-utils@npm:^1.2.3":
   version: 1.2.3
   resolution: "loader-utils@npm:1.2.3"
   dependencies:
@@ -19720,7 +19719,7 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"object-hash@npm:^1.1.4":
+"object-hash@npm:^1.3.1":
   version: 1.3.1
   resolution: "object-hash@npm:1.3.1"
   checksum: fdcb957a2f15a9060e30655a9f683ba1fc25dfb8809a73d32e9634bec385a2f1d686c707ac1e5f69fb773bc12df03fb64c77ce3faeed83e35f4eb1946cb1989e
@@ -24351,14 +24350,14 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^0.6.1#~builtin<compat/resolve>":
   version: 0.6.3
-  resolution: "resolve@patch:resolve@npm%3A0.6.3#~builtin<compat/resolve>::version=0.6.3&hash=3bafbf"
+  resolution: "resolve@patch:resolve@npm%3A0.6.3#~builtin<compat/resolve>::version=0.6.3&hash=07638b"
   checksum: fbdc248b89f655da8ff1509c000027702455d36e99943307d6e939bbef8b6f2bf67f82aa82ceb968f121febea128dd9b3e544fc6497c105204b1633bee1efad9
   languageName: node
   linkType: hard
 
 "resolve@patch:resolve@^1.0.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.10#~builtin<compat/resolve>, resolve@patch:resolve@^1.1.5#~builtin<compat/resolve>, resolve@patch:resolve@^1.10.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.14.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.19.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.20.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.22.0#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.2#~builtin<compat/resolve>, resolve@patch:resolve@^1.3.3#~builtin<compat/resolve>":
   version: 1.22.0
-  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.0#~builtin<compat/resolve>::version=1.22.0&hash=07638b"
   dependencies:
     is-core-module: ^2.8.1
     path-parse: ^1.0.7
@@ -24371,7 +24370,7 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^1.1.7#~builtin<compat/resolve>, resolve@patch:resolve@^1.2.0#~builtin<compat/resolve>":
   version: 1.22.1
-  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A1.22.1#~builtin<compat/resolve>::version=1.22.1&hash=07638b"
   dependencies:
     is-core-module: ^2.9.0
     path-parse: ^1.0.7
@@ -24384,7 +24383,7 @@ resolve@^2.0.0-next.3:
 
 "resolve@patch:resolve@^2.0.0-next.3#~builtin<compat/resolve>":
   version: 2.0.0-next.3
-  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=c3c19d"
+  resolution: "resolve@patch:resolve@npm%3A2.0.0-next.3#~builtin<compat/resolve>::version=2.0.0-next.3&hash=07638b"
   dependencies:
     is-core-module: ^2.2.0
     path-parse: ^1.0.6
@@ -24842,7 +24841,7 @@ resolve@^2.0.0-next.3:
   languageName: node
   linkType: hard
 
-"schema-utils@npm:^2.6.5, schema-utils@npm:^2.7.0":
+"schema-utils@npm:^2.1.0, schema-utils@npm:^2.6.5, schema-utils@npm:^2.7.0":
   version: 2.7.1
   resolution: "schema-utils@npm:2.7.1"
   dependencies:
@@ -27263,11 +27262,11 @@ resolve@^2.0.0-next.3:
 
 "typescript@patch:typescript@^4.5#~builtin<compat/typescript>, typescript@patch:typescript@^4.9.3#~builtin<compat/typescript>":
   version: 4.9.3
-  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=d73830"
+  resolution: "typescript@patch:typescript@npm%3A4.9.3#~builtin<compat/typescript>::version=4.9.3&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
-  checksum: 67ca21a387c0572f1c04936e638dde7782c5aa520c3754aadc7cc9b7c915da9ebc3e27c601bfff4ccb7d7264e82dce6d277ada82ec09dc75024349e0ef64926d
+  checksum: ef65c22622d864497d0a0c5db693523329b3284c15fe632e93ad9aa059e8dc38ef3bd767d6f26b1e5ecf9446f49bd0f6c4e5714a2eeaf352805dc002479843d1
   languageName: node
   linkType: hard
 
