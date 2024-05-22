@@ -19,3 +19,4 @@ ipython
 # Required by automl tests
 # 1.1.0 contains this issue: https://github.com/microsoft/FLAML/issues/871
 flaml!=1.1.0
+requests>=2.32.0 # not directly required, pinned by Snyk to avoid a vulnerability
