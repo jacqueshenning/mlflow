@@ -5,3 +5,4 @@ black[jupyter]==23.1.0
 # to format code in test-code-blocks
 blacken-docs@git+https://github.com/harupy/blacken-docs.git@test-code-block
 pre-commit==2.20.0
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
