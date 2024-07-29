@@ -9,7 +9,7 @@ fastai>=2.4.1
 # Required by mlflow.spacy
 spacy>=3.3.0
 # Required by mlflow.tensorflow
-tensorflow>=2.8.0
+tensorflow>=2.12.0rc1
 # Required by mlflow.pytorch
 torch>=1.11.0
 torchvision>=0.12.0
@@ -42,3 +42,11 @@ prophet
 pmdarima
 # Required by mlflow.diviner
 diviner
+keras>=2.13.1rc0 # not directly required, pinned by Snyk to avoid a vulnerability
+numpy>=1.22.2 # not directly required, pinned by Snyk to avoid a vulnerability
+requests>=2.32.2 # not directly required, pinned by Snyk to avoid a vulnerability
+setuptools>=70.0.0 # not directly required, pinned by Snyk to avoid a vulnerability
+urllib3>=2.2.2 # not directly required, pinned by Snyk to avoid a vulnerability
+werkzeug>=3.0.3 # not directly required, pinned by Snyk to avoid a vulnerability
+wheel>=0.38.0 # not directly required, pinned by Snyk to avoid a vulnerability
+zipp>=3.19.1 # not directly required, pinned by Snyk to avoid a vulnerability
